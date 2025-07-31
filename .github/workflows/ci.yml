@@ -37,13 +37,14 @@ jobs:
       - name: Install SonarScanner
         run: dotnet tool install --global dotnet-sonarscanner
         
+      - name: Add dotnet tools to PATH
+        run: echo "$HOME/.dotnet/tools" $GITHUB_PATH
+
       - name: Run SonarScanner Begin
         run: dotnet sonarscanner begin /k:"BankApp" /d:sonar.login=${{ secrets.SONAR_TOKEN }}
-        env:
-          PATH: ${{ runner.tool_cache }}/dotnet/tools:$PATH
 
       - name: Build for SonarScanner
-        run: dotnet build --no-restore
+        run: dotnet build
 
       - name: Run SonarScanner End
         run: dotnet sonarscanner end /d:sonar.login=${{ secrets.SONAR.TOKEN }}
