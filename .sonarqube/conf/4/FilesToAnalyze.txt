@@ -1,0 +1,9 @@
+﻿/Users/ronnihansen/Desktop/Bachelor/Projects/TestingShowcase/BankApp/Program.cs
+/Users/ronnihansen/Desktop/Bachelor/Projects/TestingShowcase/BankApp/obj/Debug/net9.0/BankApp.GlobalUsings.g.cs
+/Users/ronnihansen/Desktop/Bachelor/Projects/TestingShowcase/BankApp/obj/Debug/net9.0/.NETCoreApp,Version=v9.0.AssemblyAttributes.cs
+/Users/ronnihansen/Desktop/Bachelor/Projects/TestingShowcase/BankApp/obj/Debug/net9.0/BankApp.AssemblyInfo.cs
+/Users/ronnihansen/Desktop/Bachelor/Projects/TestingShowcase/BankApp/obj/Debug/net9.0/BankApp.MvcApplicationPartsAssemblyInfo.cs
+/Users/ronnihansen/Desktop/Bachelor/Projects/TestingShowcase/BankApp/appsettings.Development.json
+/Users/ronnihansen/Desktop/Bachelor/Projects/TestingShowcase/BankApp/appsettings.json
+/Users/ronnihansen/Desktop/Bachelor/Projects/TestingShowcase/BankApp/BankApp.http
+/Users/ronnihansen/Desktop/Bachelor/Projects/TestingShowcase/BankApp/Properties/launchSettings.json

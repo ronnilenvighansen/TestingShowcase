@@ -1,0 +1,30 @@
+Product projects
+---------------------------------------
+/Users/ronnihansen/Desktop/Bachelor/Projects/TestingShowcase/BankApp.Tests.Shared/BankApp.Tests.Shared.csproj
+/Users/ronnihansen/Desktop/Bachelor/Projects/TestingShowcase/BankApp.Core/BankApp.Core.csproj
+/Users/ronnihansen/Desktop/Bachelor/Projects/TestingShowcase/BankApp/BankApp.csproj
+
+
+Test projects
+---------------------------------------
+/Users/ronnihansen/Desktop/Bachelor/Projects/TestingShowcase/BankApp.IntegrationTests/BankApp.IntegrationTests.csproj
+/Users/ronnihansen/Desktop/Bachelor/Projects/TestingShowcase/BankApp.UnitTests/BankApp.UnitTests.csproj
+/Users/ronnihansen/Desktop/Bachelor/Projects/TestingShowcase/BankApp.SpecFlowTests/BankApp.SpecFlowTests.csproj
+/Users/ronnihansen/Desktop/Bachelor/Projects/TestingShowcase/BankApp.FunctionalTests/BankApp.FunctionalTests.csproj
+
+
+Invalid projects
+---------------------------------------
+{none}
+
+
+Skipped projects
+---------------------------------------
+{none}
+
+
+Excluded projects
+---------------------------------------
+{none}
+
+

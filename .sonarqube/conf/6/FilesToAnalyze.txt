@@ -1,0 +1,9 @@
+﻿/Users/ronnihansen/Desktop/Bachelor/Projects/TestingShowcase/BankApp.IntegrationTests/UnitTest1.cs
+/Users/ronnihansen/.nuget/packages/microsoft.net.test.sdk/17.12.0/build/netcoreapp3.1/Microsoft.NET.Test.Sdk.Program.cs
+/Users/ronnihansen/.nuget/packages/xunit.runner.visualstudio/2.8.2/build/net6.0/xunit.runner.visualstudio.testadapter.dll
+/Users/ronnihansen/.nuget/packages/xunit.runner.visualstudio/2.8.2/build/net6.0/xunit.runner.reporters.netcoreapp10.dll
+/Users/ronnihansen/.nuget/packages/xunit.runner.visualstudio/2.8.2/build/net6.0/xunit.runner.utility.netcoreapp10.dll
+/Users/ronnihansen/Desktop/Bachelor/Projects/TestingShowcase/BankApp.IntegrationTests/TestResults/39fd384c-d8df-402e-adba-2a77b0844328/coverage.cobertura.xml
+/Users/ronnihansen/Desktop/Bachelor/Projects/TestingShowcase/BankApp.IntegrationTests/TestResults/bb7c6880-8126-4c83-a3bf-b177d334ecb1/coverage.cobertura.xml
+/Users/ronnihansen/Desktop/Bachelor/Projects/TestingShowcase/BankApp.IntegrationTests/TestResults/c04040a9-7163-4008-94a9-b725b079af17/coverage.cobertura.xml
+/Users/ronnihansen/Desktop/Bachelor/Projects/TestingShowcase/BankApp.IntegrationTests/TestResults/f262658f-9550-4694-8a9b-7a2bd3f733ca/coverage.cobertura.xml

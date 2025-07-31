@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ProjectInfo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://www.sonarsource.com/msbuild/integration/2015/1">
+  <ProjectName>BankApp.Core</ProjectName>
+  <ProjectLanguage>C#</ProjectLanguage>
+  <ProjectType>Product</ProjectType>
+  <ProjectGuid>682eca21-2d98-4d4c-91ef-c4fa0a078472</ProjectGuid>
+  <FullPath>/Users/ronnihansen/Desktop/Bachelor/Projects/TestingShowcase/BankApp.Core/BankApp.Core.csproj</FullPath>
+  <IsExcluded>false</IsExcluded>
+  <AnalysisResults>
+    <AnalysisResult Id="FilesToAnalyze" Location="/Users/ronnihansen/Desktop/Bachelor/Projects/TestingShowcase/.sonarqube/conf/1/FilesToAnalyze.txt" />
+  </AnalysisResults>
+  <AnalysisSettings>
+    <Property Name="sonar.cs.roslyn.reportFilePaths">/Users/ronnihansen/Desktop/Bachelor/Projects/TestingShowcase/.sonarqube/out/1/Issues.json</Property>
+    <Property Name="sonar.cs.analyzer.projectOutPaths">/Users/ronnihansen/Desktop/Bachelor/Projects/TestingShowcase/.sonarqube/out/1</Property>
+    <Property Name="sonar.cs.scanner.telemetry">/Users/ronnihansen/Desktop/Bachelor/Projects/TestingShowcase/.sonarqube/out/1/Telemetry.json</Property>
+  </AnalysisSettings>
+  <Configuration>Debug</Configuration>
+  <Platform>AnyCPU</Platform>
+  <TargetFramework>net9.0</TargetFramework>
+</ProjectInfo>

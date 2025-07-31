@@ -1,0 +1,10 @@
+﻿/Users/ronnihansen/Desktop/Bachelor/Projects/TestingShowcase/BankApp.FunctionalTests/UnitTest1.cs
+/Users/ronnihansen/.nuget/packages/microsoft.net.test.sdk/17.12.0/build/netcoreapp3.1/Microsoft.NET.Test.Sdk.Program.cs
+/Users/ronnihansen/.nuget/packages/xunit.runner.visualstudio/2.8.2/build/net6.0/xunit.runner.visualstudio.testadapter.dll
+/Users/ronnihansen/.nuget/packages/xunit.runner.visualstudio/2.8.2/build/net6.0/xunit.runner.reporters.netcoreapp10.dll
+/Users/ronnihansen/.nuget/packages/xunit.runner.visualstudio/2.8.2/build/net6.0/xunit.runner.utility.netcoreapp10.dll
+/Users/ronnihansen/Desktop/Bachelor/Projects/TestingShowcase/BankApp.FunctionalTests/Features/Deposit.feature
+/Users/ronnihansen/Desktop/Bachelor/Projects/TestingShowcase/BankApp.FunctionalTests/TestResults/0753a067-207a-4f1a-a05b-4fe0fa26c608/coverage.cobertura.xml
+/Users/ronnihansen/Desktop/Bachelor/Projects/TestingShowcase/BankApp.FunctionalTests/TestResults/31275695-2a88-4496-9413-105facc72bb3/coverage.cobertura.xml
+/Users/ronnihansen/Desktop/Bachelor/Projects/TestingShowcase/BankApp.FunctionalTests/TestResults/9bb58469-501b-46f9-bd3f-a80788b6f049/coverage.cobertura.xml
+/Users/ronnihansen/Desktop/Bachelor/Projects/TestingShowcase/BankApp.FunctionalTests/TestResults/b3af9f23-7862-4ce6-9280-722141cfda3f/coverage.cobertura.xml

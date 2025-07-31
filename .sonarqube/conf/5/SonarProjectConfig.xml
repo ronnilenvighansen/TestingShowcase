@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SonarProjectConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://www.sonarsource.com/msbuild/analyzer/2021/1">
+  <AnalysisConfigPath>/Users/ronnihansen/Desktop/Bachelor/Projects/TestingShowcase/.sonarqube/conf/SonarQubeAnalysisConfig.xml</AnalysisConfigPath>
+  <ProjectPath>/Users/ronnihansen/Desktop/Bachelor/Projects/TestingShowcase/BankApp.FunctionalTests/BankApp.FunctionalTests.csproj</ProjectPath>
+  <FilesToAnalyzePath>/Users/ronnihansen/Desktop/Bachelor/Projects/TestingShowcase/.sonarqube/conf/5/FilesToAnalyze.txt</FilesToAnalyzePath>
+  <OutPath>/Users/ronnihansen/Desktop/Bachelor/Projects/TestingShowcase/.sonarqube/out/5</OutPath>
+  <ProjectType>Test</ProjectType>
+  <TargetFramework>net9.0</TargetFramework>
+</SonarProjectConfig>
