@@ -1,1 +1,50 @@
-nam
+name: BankApp CI
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+   branches: [ main ]
+
+jobs:
+  build-test-sonar:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Setup .NET 9 SDK
+        uses: actions/setup-dotnet@v3
+        woth:
+          dotnet-version: '9.0.x'
+
+      - name: Restore dependencies
+        run: dotnet restore
+
+      - name: Build solution
+        run: dotnet build --configuration Release --no-restore
+
+      - name: Run tests with code coverage
+        run: dotnet test --configuration Release --no-build --collect:"XPlat Code Coverage"
+
+      - name: Upload test results (optional)
+        uses: actions/upload-artifact@v3
+        with:
+          name: TestResults
+          path: '**/TestResults/*.xml'
+
+      - name: Setup SonarScanner
+        uses: sonarsource/sonarcloud-github-actions@master
+        env:
+          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+        
+      - name: Run SonarScanner Begin
+        run: |
+          dotnet sonarscanner begin /k: "BankApp" /d:sonar.login=${{ secrets.SONAR_TOKEN }}
+
+      - name: Build for SonarScanner
+        run: dotnet build --configuration Release
+
+      - name: Run SonarScanner End
+        run: dotnet sonarscanner end /d:sonar.login=${{ secrets.SONAR.TOKEN }}
