@@ -12,10 +12,10 @@ jobs:
 
     steps:
       - name: Checkout code
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Setup .NET 9 SDK
-        uses: actions/setup-dotnet@v3
+        uses: actions/setup-dotnet@v4
         with:
           dotnet-version: '9.0.x'
 
@@ -29,22 +29,21 @@ jobs:
         run: dotnet test --configuration Release --no-build --collect:"XPlat Code Coverage"
 
       - name: Upload test results (optional)
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: TestResults
           path: '**/TestResults/*.xml'
 
-      - name: Setup SonarScanner
-        uses: sonarsource/sonarcloud-github-actions@master
-        env:
-          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+      - name: Install SonarScanner
+        run: dotnet tool install --global dotnet-sonarscanner
         
       - name: Run SonarScanner Begin
-        run: |
-          dotnet sonarscanner begin /k: "BankApp" /d:sonar.login=${{ secrets.SONAR_TOKEN }}
+        run: dotnet sonarscanner begin /k:"BankApp" /d:sonar.login=${{ secrets.SONAR_TOKEN }}
+        env:
+          PATH: ${{ runner.tool_cache }}/dotnet/tools:$PATH
 
       - name: Build for SonarScanner
-        run: dotnet build --configuration Release
+        run: dotnet build --no-restore
 
       - name: Run SonarScanner End
         run: dotnet sonarscanner end /d:sonar.login=${{ secrets.SONAR.TOKEN }}
