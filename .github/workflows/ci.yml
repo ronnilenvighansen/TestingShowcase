@@ -22,6 +22,21 @@ jobs:
       - name: Restore dependencies
         run: dotnet restore
 
+      - name: Install SonarScanner
+        run: dotnet tool install --global dotnet-sonarscanner
+        
+      - name: Add dotnet tools to PATH
+        run: echo "$HOME/.dotnet/tools" $GITHUB_PATH
+
+      - name: Begin SonarCloud Analysis
+        run: |
+          dotnet sonarscanner begin \ 
+            /k:"${{ secrets.SONAR_PROJECT_KEY }}" \
+            /o:"${{ secrets_SONAR_ORG }}" \
+            /d:sonar.login="${{ secrets.SONAR_TOKEN }}" \
+            /d:sonar.host.url="https://sonarcloud.io" \
+            /d:sonar.cs.opencover.reportsPaths="**/coverage.cobertura.xml"
+
       - name: Build solution
         run: dotnet build --configuration Release --no-restore
 
@@ -34,17 +49,5 @@ jobs:
           name: TestResults
           path: '**/TestResults/*.xml'
 
-      - name: Install SonarScanner
-        run: dotnet tool install --global dotnet-sonarscanner
-        
-      - name: Add dotnet tools to PATH
-        run: echo "$HOME/.dotnet/tools" $GITHUB_PATH
-
-      - name: Run SonarScanner Begin
-        run: dotnet sonarscanner begin /k:"BankApp" /d:sonar.login=${{ secrets.SONAR_TOKEN }}
-
-      - name: Build for SonarScanner
-        run: dotnet build
-
-      - name: Run SonarScanner End
+      - name: End SonarCloud Analysis
         run: dotnet sonarscanner end /d:sonar.login=${{ secrets.SONAR.TOKEN }}
