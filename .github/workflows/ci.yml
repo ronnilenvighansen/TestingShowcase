@@ -32,7 +32,7 @@ jobs:
         run: |
           dotnet sonarscanner begin \ 
             /k:"${{ secrets.SONAR_PROJECT_KEY }}" \
-            /o:"${{ secrets_SONAR_ORG }}" \
+            /o:"${{ secrets.SONAR_ORG }}" \
             /d:sonar.login="${{ secrets.SONAR_TOKEN }}" \
             /d:sonar.host.url="https://sonarcloud.io" \
             /d:sonar.cs.opencover.reportsPaths="**/coverage.cobertura.xml"
@@ -50,4 +50,4 @@ jobs:
           path: '**/TestResults/*.xml'
 
       - name: End SonarCloud Analysis
-        run: dotnet sonarscanner end /d:sonar.login=${{ secrets.SONAR.TOKEN }}
+        run: dotnet sonarscanner end /d:sonar.login=${{ secrets.SONAR_TOKEN }}
